@@ -1,14 +1,18 @@
 node{
-
+  
+tools{
+  jdk 'myjava'
+  mvn 'mymaven'
+  }
 
   stage('git stage'){
-
-    echo "git stage"
+   
+    git 'https://github.com/kliakos/sparkjava-war-example.git'
     }
 
   stage('mvn apcage stage'){
 
-    echo "mvn stage"
+       sh 'mvn package'
    }
 
   stage('copy stage'){
