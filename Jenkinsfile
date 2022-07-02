@@ -13,7 +13,7 @@ node{
 
   stage('copy stage'){
 
-   echo ("copy stage"){
+   echo ("copy stage")
 
    }
 
